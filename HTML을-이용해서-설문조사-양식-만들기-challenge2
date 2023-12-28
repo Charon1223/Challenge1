@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML을 이용해서 설문조사 양식<</title>
+</head>
+<body>
+  
+  <header>
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">1. 이름</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label>2. 성별</label>
+        <label for="male">
+          <input type="radio" id="male" name="sex">남
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="sex">여
+        </label>
+        <br>
+        <label for="email">3. 이메일주소</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="id-number">4. 주민등록번호 ("-" 제외)</label>
+        <input type="password" id="id-number" name="id-number" maxlength="13">
+      </fieldset>
+      <fieldset>
+        <legend>설문</legend>
+        <p>연령대가 어떻게 되십니까?</p>
+        <input type="radio" name="age" id="age1">
+        <label for="age1">10대</label>
+        <input type="radio" name="age" id="age2">
+        <label for="age2">20대</label>
+        <input type="radio" name="age" id="age3">
+        <label for="age3">30대</label>
+        <input type="radio" name="age" id="age4">
+        <label for="age4">40대</label>
+        <input type="radio" name="age" id="age5">
+        <label for="age5">50대</label>
+        <input type="radio" name="age" id="other">
+        <label for="other">그 외</label>
+        <p>학원을 선택할 때 가장 중요하게 생각하는 것은 무엇입니까? 모두 고르시오.</p>
+        <input type="checkbox" name="academy" id="location">
+        <label for="location">위치</label>
+        <input type="checkbox" name="academy" id="price">
+        <label for="price">학원비</label>
+        <input type="checkbox" name="academy" id="teacher">
+        <label for="teacher">강사</label>
+        <input type="checkbox" name="academy" id="infra">
+        <label for="infra">시설</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>기타 의견</legend>
+        <textarea name="comment" cols="30" rows="20" ></textarea>
+      </fieldset>
+      <input type="submit" value="제출"></input>
+    </form>
+  </main>
+  
+  <hr>
+
+  <footer>
+    <p>입력하느라 수고하셨습니다.</p>
+  </footer>
+
+</body>
+</html>
