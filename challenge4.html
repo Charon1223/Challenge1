@@ -4,69 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
-  <style>
-    header h1{
-      text-align: center;
-    }
-    header label{
-      text-align: left;
-    }
-    .input-set{
-      width: 35%;
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto 20px;
-    }
-    label{
-      margin-bottom: 5px;
-    }
-    input{
-      padding: 10px;
-      border-radius: 10px;
-      border:1px solid #999;
-      background-color: aliceblue;
-    }
-    #phone{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
-    }
-    #phone > input{
-      width: 24%;
-    }
-    #chk-num{
-      margin: 15px auto;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      outline: none;
-      background-color: #4e0097;
-      box-shadow: 1px 1px 1px rgb(2, 2, 2);
-      cursor: pointer;
-    }
-    #join{
-      display: block;
-      margin: 15px auto;
-      width: 35%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      outline: none;
-      background-color: #660abc;
-      box-shadow: 1px 1px 1px rgb(2, 2, 2);
-      cursor: pointer;
-    }
-    #location{
-      padding: 10px;
-      border-radius: 10px;
-      border:1px solid #999;
-      background-color: aliceblue;
-    }
-  </style>
+
 </head>
   
 <body>
@@ -102,6 +40,7 @@
         <label for="check-number"><strong>인증번호: </strong><br></label>
         <input type="number" name="check-number" id="check-number" placeholder="인증번호를 입력하세요">
       </div>
+      
       <div class="input-set">
         <label for="location"><strong>지역: </strong></label>
         <select id="location">
@@ -125,6 +64,7 @@
           <option value="jeju" name="location">제주</option>
       </select>
       </div>
+      <hr>
       <input type="submit" id="join" value="회원가입"></input>
     </form>
   </main>
