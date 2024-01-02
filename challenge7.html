@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로필 페이지</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @keyframes moving1{
+      0% {
+        color: blueviolet;
+      }
+      50% {
+        color: rgb(254, 254, 254); 
+      }
+      100% {
+        color: blueviolet;
+      }
+    }
+
+    @keyframes moving2{
+      0% {
+        color: rgb(226, 43, 43);
+      }
+      50% {
+        color: rgb(214, 162, 162); 
+      }
+      100% {
+        color: rgb(226, 43, 43);
+      }
+    }
+
+  </style>
+</head>
+<body style="text-align: center; padding: 20px 0;">
+  
+  <header>
+    <h1 style="color:blueviolet; animation: moving1 2s infinite; padding: 0 0 10px 0;">프로필</h1>
+  </header>
+
+
+  <main>
+    <hr><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The.Matrix.glmatrix.2.png/300px-The.Matrix.glmatrix.2.png" alt="매트릭스 이미지" width="300px"><br>
+    <span style="color:#999; font-size:14px;">가장 좋아하는 영화</span><br><br>
+
+    <p><strong style="font-size: 20px; animation: moving2 2s infinite;">자기소개 </strong><br><br>
+    안녕하세요, <br>저는 이 번 초격차 캠프 2기 프론트앤드 과정에 참가하게 된 최민수라고 합니다.<br>
+    서울 동작구에 거주하고 있고 운동하는 것을 좋아합니다.<br>
+    </p>
+    <hr style="width: 30%; margin: 40px auto;">
+
+    <strong style="font-size: 20px; animation: moving2 2s infinite;">현재 내 수준</strong><br>
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="html이미지" style="width:100px; margin: 30px; border-radius: 50px;">
+    <p><b>HTML:</b> 시멘틱태그와 메타태그 등 필요에 따른 구조로 각 태그들을 활용함</p>
+    <img src="https://images.velog.io/images/0jiiino/post/8c947a9e-3efd-47ed-be88-6a08107b6ea2/919826.png" alt="css이미지" style="width:100px; height:100px; margin: 30px; border-radius: 50px;">
+    <p><b>CSS:</b> 플렉스박스로 유연한 컨테이너 위치선정이 가능함</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/128px-Unofficial_JavaScript_logo_2.svg.png" alt="js이미지" style="width:100px; height:100px; margin: 30px; border-radius: 50px;">
+    <p><b>자바스크립트:</b> 배열, 객체, 메소드, 이벤트 등을 활용한 기능구현이 가능함</p>
+  </main>
+</body>
+</html>
