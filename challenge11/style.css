@@ -55,12 +55,7 @@ body{
   font-weight: 500;
   margin-top: 3px;
 }
-.chat-time{
-  position: relative;
-  top: 30px;
-  left: calc(100% - 55%);
-  color: #444;
-}
+
 .chat-form{
   height: 100px;
   background-color: #fff;
@@ -94,40 +89,4 @@ body{
 .chat-form__field input[type="button"]:active{
   background-color: rgb(20, 189, 116);
 }
-.chat-massage{
-  position: relative;
-  top: 70px;
-  left: 20px;
-  list-style: none;
-  width: 300px;
-  
-}
-.message:nth-child(1){
-  margin-top: 0;
-}
-.message:last-child{
-  margin-bottom: 100px;
-}
-.message{
-  padding: 10px;
-  margin-top: 20px;
-  background-color: aliceblue;
-  word-wrap:break-word;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-}
-.message::before{
-  content:"";
-  border-right:15px solid aliceblue;
-  border-bottom:15px solid transparent;
-  position: absolute;
-  top: 10px;
-  left: -10px;
-}
-.message:hover{
-  background-color: #dedede;
-}
-.message:hover::before{
-  border-right:15px solid #dedede;
-}
+
